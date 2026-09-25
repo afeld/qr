@@ -11,11 +11,7 @@ A small, mobile-first web page for sharing your email, website, or phone number 
 
 ## Running
 
-It's a single static file with no build step. Open `index.html` in a browser, or serve the folder with any static file server:
-
-```sh
-python3 -m http.server
-```
+It's a single static file with no build step: just open `index.html` in a browser.
 
 React and [qrcode-generator](https://github.com/kazuhikoarase/qrcode-generator) are loaded from cdnjs, and fonts from Google Fonts.
 
