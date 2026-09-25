@@ -611,7 +611,9 @@
       ),
       h(
         "form",
-        { className: "form-body", onSubmit: handleSubmit },
+        // noValidate: type="url" would otherwise reject bare domains, which
+        // normalizeUrl() handles; validateField() covers validation instead
+        { className: "form-body", onSubmit: handleSubmit, noValidate: true },
         h(
           "h1",
           { className: "form-heading" },
